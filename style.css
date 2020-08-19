@@ -82,9 +82,8 @@ header .container nav ul li {
 
 .earth {
   background: #0b0f15;
-  height: 100vh;
+  height: 48vh;
   position: relative;
-  display: flex;
 }
 .earth div {
   display: flex;
@@ -116,12 +115,16 @@ header .container nav ul li {
   right: 0px;
   top: -150px;
 }
+.earth .diagram {
+  width: 100%;
+  display: flex;
+  height: auto;
+}
 
 .space {
   background: #0b0f15;
-  height: 100vh;
+  height: 70vh;
   position: relative;
-  display: flex;
 }
 .space div {
   display: flex;
@@ -147,11 +150,19 @@ header .container nav ul li {
   width: 33vw;
 }
 .space img {
-  height: 400px;
+  padding-top: 20px;
+  height: 250px;
   text-align: right;
   position: absolute;
   left: 0px;
   top: 0px;
+  z-index: 1;
+}
+.space .diagram {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  padding-top: 40px;
 }
 
 footer {
@@ -190,6 +201,14 @@ footer {
 @media (orientation: portrait) and (min-width: 670px) and (max-width: 769px) {
   header .container nav {
     display: block;
+  }
+
+  .earth .diagram {
+    padding-top: 25%;
+  }
+
+  .space .diagram {
+    padding-top: 25%;
   }
 }
 @media (min-width: 770px) and (max-width: 1200px) {

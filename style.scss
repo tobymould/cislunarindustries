@@ -99,9 +99,9 @@ header {
 
 .earth {
   background: #0b0f15;
-  height: 100vh;
+  height: 48vh;
   position: relative;
-  display: flex;
+  // background: pink;
 
   div {
     display: flex;
@@ -141,13 +141,20 @@ header {
       // background: blue;
     }
   }
+
+  .diagram {
+    width: 100%;
+    display: flex;
+    height: auto;
+    // background: blue;
+  }
 }
 
 .space {
   background: #0b0f15;
-  height: 100vh;
+  height: 70vh;
   position: relative;
-  display: flex;
+  // background: pink;
 
   div {
     display: flex;
@@ -180,11 +187,22 @@ header {
   }
 
   img {
-    height: 400px;
+    padding-top: 20px;
+    height: 250px;
     text-align: right;
     position: absolute;
     left: 0px;
     top: 0px;
+    z-index: 1;
+    // background: blue;
+  }
+
+  .diagram {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    padding-top: 40px;
+
     // background: blue;
   }
 }
@@ -259,6 +277,18 @@ footer {
         nav {
           display: block;
         }
+      }
+    }
+
+    .earth {
+      .diagram {
+        padding-top: 25%;
+      }
+    }
+
+    .space {
+      .diagram {
+        padding-top: 25%;
       }
     }
   }
