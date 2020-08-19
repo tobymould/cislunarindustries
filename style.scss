@@ -1,0 +1,143 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $lato-font;
+
+  h1,
+  h2,
+  h3,
+  a,
+  li,
+  p {
+    color: white;
+  }
+
+  .container {
+    margin: 0 20px;
+    padding: 10px;
+  }
+}
+
+header {
+  position: absolute;
+  height: 20vh;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      width: 150px;
+    }
+
+    nav {
+      display: none;
+
+      ul {
+        display: flex;
+        list-style: none;
+        padding: 20px;
+
+        li {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+.landing {
+  height: 100vh;
+  background: url('./assests/nightsky.jpg') no-repeat center center / cover;
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+// --------------------------------------------------------------------------
+
+// LANDSCAPE FORMATS
+@media (orientation: landscape) {
+  @media (max-width: $iphoneX-width-landscape) {
+  }
+
+  @media (min-width: 813px) and (max-width: $ipad-width-landscape) {
+    header {
+      .container {
+        nav {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: $ipad-pro-width-landscape) {
+    header {
+      .container {
+        nav {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $desktop-min-width) {
+    header {
+      .container {
+        nav {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// PORTRAIT FORMATS
+@media (orientation: portrait) {
+  // Ipad
+  @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
+    header {
+      .container {
+        nav {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Ipad Pro
+@media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
+  header {
+    .container {
+      nav {
+        display: block;
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: $desktop-min-width) {
+  header {
+    .container {
+      nav {
+        display: block;
+      }
+    }
+  }
+}
