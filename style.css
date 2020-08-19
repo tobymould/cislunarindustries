@@ -52,7 +52,7 @@ header .container nav ul li {
 }
 
 .landing {
-  height: 102vh;
+  height: 95vh;
   background: url("./assests/nightsky.jpg") no-repeat center center/cover;
 }
 .landing .container {
@@ -82,7 +82,7 @@ header .container nav ul li {
 
 .earth {
   background: #0b0f15;
-  height: 48vh;
+  height: 58vh;
   position: relative;
 }
 .earth div {
@@ -123,7 +123,7 @@ header .container nav ul li {
 
 .space {
   background: #0b0f15;
-  height: 70vh;
+  height: 85vh;
   position: relative;
 }
 .space div {
@@ -177,48 +177,200 @@ footer {
   .landing .container button {
     margin-top: 0px;
   }
+
+  .earth {
+    display: none;
+  }
+
+  .space {
+    display: none;
+  }
 }
 @media (orientation: landscape) and (min-width: 667px) and (max-width: 812px) {
   .landing .container button {
     margin-top: 0px;
+  }
+
+  .earth {
+    display: none;
+  }
+
+  .space {
+    display: none;
   }
 }
 @media (orientation: landscape) and (min-width: 813px) and (max-width: 1024px) {
   header .container nav {
     display: block;
   }
+
+  .earth {
+    display: none;
+  }
+
+  .space {
+    display: none;
+  }
 }
 @media (orientation: landscape) and (min-width: 1025px) and (max-width: 1366px) {
   header .container nav {
     display: block;
+  }
+
+  .earth {
+    display: none;
+  }
+
+  .space {
+    display: none;
   }
 }
 @media (orientation: landscape) and (min-width: 1201px) {
   header .container nav {
     display: block;
   }
+
+  .earth {
+    display: none;
+  }
+
+  .space {
+    display: none;
+  }
 }
-@media (orientation: portrait) and (min-width: 670px) and (max-width: 769px) {
+@media (min-width: 670px) and (max-width: 769px) {
   header .container nav {
     display: block;
   }
 
+  .earth {
+    display: none;
+    height: 48vh;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .earth div .dotted-line {
+    border-top: 7.5px dotted orange;
+    position: relative;
+    top: -5px;
+  }
+  .earth div .dotted-line:nth-of-type(1) {
+    width: 33vw;
+  }
+  .earth div .dotted-line:nth-of-type(2) {
+    width: 33vw;
+  }
   .earth .diagram {
-    padding-top: 25%;
+    width: auto;
+    height: 100%;
   }
 
+  .space {
+    display: none;
+    height: 70vh;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .space .diagram {
-    padding-top: 25%;
+    text-align: center;
+    width: auto;
+    height: 100%;
   }
 }
 @media (min-width: 770px) and (max-width: 1200px) {
   header .container nav {
     display: block;
   }
+
+  .earth {
+    display: none;
+    height: 48vh;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .earth div .dotted-line {
+    border-top: 7.5px dotted orange;
+    position: relative;
+    top: -5px;
+  }
+  .earth div .dotted-line:nth-of-type(1) {
+    width: 33vw;
+  }
+  .earth div .dotted-line:nth-of-type(2) {
+    width: 33vw;
+  }
+  .earth .diagram {
+    width: auto;
+    height: 100%;
+  }
+
+  .space {
+    display: none;
+    height: 70vh;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .space .diagram {
+    text-align: center;
+    width: auto;
+    height: 100%;
+  }
 }
 @media (min-width: 1201px) {
   header .container nav {
     display: block;
+  }
+
+  .earth {
+    display: none;
+    height: 48vh;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .earth div .dotted-line {
+    border-top: 7.5px dotted orange;
+    position: relative;
+    top: -5px;
+  }
+  .earth div .dotted-line:nth-of-type(1) {
+    width: 33vw;
+  }
+  .earth div .dotted-line:nth-of-type(2) {
+    width: 33vw;
+  }
+  .earth .diagram {
+    width: auto;
+    height: 100%;
+  }
+
+  .space {
+    display: none;
+    height: 70vh;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .space .diagram {
+    text-align: center;
+    width: auto;
+    height: 100%;
   }
 }
 

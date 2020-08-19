@@ -62,7 +62,7 @@ header {
 }
 
 .landing {
-  height: 102vh;
+  height: 95vh;
   background: url('./assests/nightsky.jpg') no-repeat center center / cover;
 
   .container {
@@ -99,7 +99,7 @@ header {
 
 .earth {
   background: #0b0f15;
-  height: 48vh;
+  height: 58vh;
   position: relative;
   // background: pink;
 
@@ -152,7 +152,7 @@ header {
 
 .space {
   background: #0b0f15;
-  height: 70vh;
+  height: 85vh;
   position: relative;
   // background: pink;
 
@@ -226,7 +226,14 @@ footer {
         }
       }
     }
+    .earth {
+      display: none;
+    }
+    .space {
+      display: none;
+    }
   }
+
   @media (min-width: $iphone6-width-landscape) and (max-width: $iphoneX-width-landscape) {
     .landing {
       .container {
@@ -234,6 +241,12 @@ footer {
           margin-top: 0px;
         }
       }
+    }
+    .earth {
+      display: none;
+    }
+    .space {
+      display: none;
     }
   }
 
@@ -245,6 +258,12 @@ footer {
         }
       }
     }
+    .earth {
+      display: none;
+    }
+    .space {
+      display: none;
+    }
   }
 
   @media (min-width: 1025px) and (max-width: $ipad-pro-width-landscape) {
@@ -254,6 +273,12 @@ footer {
           display: block;
         }
       }
+    }
+    .earth {
+      display: none;
+    }
+    .space {
+      display: none;
     }
   }
 
@@ -265,31 +290,85 @@ footer {
         }
       }
     }
+    .earth {
+      display: none;
+    }
+    .space {
+      display: none;
+    }
   }
 }
 
 // PORTRAIT FORMATS
 @media (orientation: portrait) {
-  // Ipad
-  @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-    header {
-      .container {
-        nav {
-          display: block;
+  // @media (min-width: 375px) and (max-width: $iphoneX-height-landscape) {
+  //   .landing {
+  //     .container {
+  //       button {
+  //         margin-top: 0px;
+  //       }
+  //     }
+  //   }
+  // }
+}
+// Ipad
+@media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
+  header {
+    .container {
+      nav {
+        display: block;
+      }
+    }
+  }
+
+  .earth {
+    display: none;
+    height: 48vh;
+    // padding: 0 10%;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      .dotted-line {
+        border-top: 7.5px dotted orange;
+        position: relative;
+        top: -5px;
+
+        &:nth-of-type(1) {
+          width: 33vw;
+        }
+
+        &:nth-of-type(2) {
+          width: 33vw;
         }
       }
     }
 
-    .earth {
-      .diagram {
-        padding-top: 25%;
-      }
+    .diagram {
+      // padding-top: 25%;
+      width: auto;
+      height: 100%;
     }
+  }
 
-    .space {
-      .diagram {
-        padding-top: 25%;
-      }
+  .space {
+    display: none;
+    height: 70vh;
+    background: pink;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .diagram {
+      // padding-top: 25%;
+      text-align: center;
+      width: auto;
+      height: 100%;
     }
   }
 }
@@ -303,6 +382,58 @@ footer {
       }
     }
   }
+
+  .earth {
+    display: none;
+    height: 48vh;
+    // padding: 0 10%;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      .dotted-line {
+        border-top: 7.5px dotted orange;
+        position: relative;
+        top: -5px;
+
+        &:nth-of-type(1) {
+          width: 33vw;
+        }
+
+        &:nth-of-type(2) {
+          width: 33vw;
+        }
+      }
+    }
+
+    .diagram {
+      // padding-top: 25%;
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .space {
+    display: none;
+
+    height: 70vh;
+    background: pink;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .diagram {
+      // padding-top: 25%;
+      text-align: center;
+      width: auto;
+      height: 100%;
+    }
+  }
 }
 
 // Desktop
@@ -312,6 +443,59 @@ footer {
       nav {
         display: block;
       }
+    }
+  }
+
+  .earth {
+    display: none;
+
+    height: 48vh;
+    // padding: 0 10%;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      .dotted-line {
+        border-top: 7.5px dotted orange;
+        position: relative;
+        top: -5px;
+
+        &:nth-of-type(1) {
+          width: 33vw;
+        }
+
+        &:nth-of-type(2) {
+          width: 33vw;
+        }
+      }
+    }
+
+    .diagram {
+      // padding-top: 25%;
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .space {
+    display: none;
+
+    height: 70vh;
+    background: pink;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .diagram {
+      // padding-top: 25%;
+      text-align: center;
+      width: auto;
+      height: 100%;
     }
   }
 }
