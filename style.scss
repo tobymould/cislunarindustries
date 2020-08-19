@@ -103,35 +103,99 @@ header {
   position: relative;
   display: flex;
 
-  h2 {
-    // background: pink;
-    position: relative;
-    top: -15px;
-    padding: 0 10px;
-  }
+  div {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    // background: red;
+    height: 5vh;
+    width: 100%;
 
-  .dotted-line {
-    border-top: 7.5px dotted orange;
-    position: relative;
-    top: -5px;
-    &:nth-of-type(1) {
-      width: 20vw;
+    h2 {
+      // background: pink;
+      position: relative;
+      top: -15px;
+      padding: 0 10px;
     }
 
-    &:nth-of-type(2) {
-      width: 10vw;
+    .dotted-line {
+      border-top: 7.5px dotted orange;
+      position: relative;
+      top: -5px;
+
+      &:nth-of-type(1) {
+        width: 20vw;
+      }
+
+      &:nth-of-type(2) {
+        width: 39vw;
+      }
+    }
+
+    img {
+      height: 300px;
+      text-align: right;
+      position: absolute;
+      right: 0px;
+      top: -150px;
+      // background: blue;
+    }
+  }
+}
+
+.space {
+  background: #0b0f15;
+  height: 100vh;
+  position: relative;
+  display: flex;
+
+  div {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    // background: red;
+    height: 5vh;
+    width: 100%;
+
+    h2 {
+      // background: pink;
+      position: relative;
+      top: -15px;
+      padding: 0 10px;
+    }
+
+    .dotted-line {
+      border-top: 7.5px dotted orange;
+      position: relative;
+      top: -5px;
+
+      &:nth-of-type(1) {
+        width: 33vw;
+      }
+
+      &:nth-of-type(2) {
+        width: 33vw;
+      }
     }
   }
 
   img {
-    height: 300px;
+    height: 400px;
     text-align: right;
     position: absolute;
-    right: -150px;
-    top: -150px;
+    left: 0px;
+    top: 0px;
+    // background: blue;
   }
 }
 
+footer {
+  height: 5vh;
+  background: rgb(53, 54, 57);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 // --------------------------------------------------------------------------
 
 // LANDSCAPE FORMATS

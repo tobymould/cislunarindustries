@@ -86,28 +86,80 @@ header .container nav ul li {
   position: relative;
   display: flex;
 }
-.earth h2 {
+.earth div {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  height: 5vh;
+  width: 100%;
+}
+.earth div h2 {
   position: relative;
   top: -15px;
   padding: 0 10px;
 }
-.earth .dotted-line {
+.earth div .dotted-line {
   border-top: 7.5px dotted orange;
   position: relative;
   top: -5px;
 }
-.earth .dotted-line:nth-of-type(1) {
+.earth div .dotted-line:nth-of-type(1) {
   width: 20vw;
 }
-.earth .dotted-line:nth-of-type(2) {
-  width: 10vw;
+.earth div .dotted-line:nth-of-type(2) {
+  width: 39vw;
 }
-.earth img {
+.earth div img {
   height: 300px;
   text-align: right;
   position: absolute;
-  right: -150px;
+  right: 0px;
   top: -150px;
+}
+
+.space {
+  background: #0b0f15;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+.space div {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  height: 5vh;
+  width: 100%;
+}
+.space div h2 {
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+}
+.space div .dotted-line {
+  border-top: 7.5px dotted orange;
+  position: relative;
+  top: -5px;
+}
+.space div .dotted-line:nth-of-type(1) {
+  width: 33vw;
+}
+.space div .dotted-line:nth-of-type(2) {
+  width: 33vw;
+}
+.space img {
+  height: 400px;
+  text-align: right;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+footer {
+  height: 5vh;
+  background: #353639;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (orientation: landscape) and (max-width: 667px) {
