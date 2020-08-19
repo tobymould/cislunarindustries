@@ -14,13 +14,17 @@ body {
   h3,
   a,
   li,
-  p {
+  p,
+  small {
     color: white;
   }
 
-  .container {
-    margin: 0 20px;
-    padding: 10px;
+  button {
+    background: white;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    border-radius: 10px;
   }
 }
 
@@ -29,13 +33,16 @@ header {
   height: 20vh;
 
   .container {
+    padding: 20px 20px;
+    width: 100vw;
     display: flex;
+    // background: pink;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
 
     img {
-      width: 150px;
+      width: 120px;
     }
 
     nav {
@@ -55,7 +62,7 @@ header {
 }
 
 .landing {
-  height: 100vh;
+  height: 102vh;
   background: url('./assests/nightsky.jpg') no-repeat center center / cover;
 
   .container {
@@ -65,6 +72,63 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.75rem;
+      color: orange;
+    }
+
+    button {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      // width: 200px;
+    }
+
+    small {
+      // background: red;
+      font-weight: bold;
+      width: 150px;
+    }
+  }
+}
+
+.earth {
+  background: #0b0f15;
+  height: 100vh;
+  position: relative;
+  display: flex;
+
+  h2 {
+    // background: pink;
+    position: relative;
+    top: -15px;
+    padding: 0 10px;
+  }
+
+  .dotted-line {
+    border-top: 7.5px dotted orange;
+    position: relative;
+    top: -5px;
+    &:nth-of-type(1) {
+      width: 20vw;
+    }
+
+    &:nth-of-type(2) {
+      width: 10vw;
+    }
+  }
+
+  img {
+    height: 300px;
+    text-align: right;
+    position: absolute;
+    right: -150px;
+    top: -150px;
   }
 }
 
@@ -72,7 +136,23 @@ header {
 
 // LANDSCAPE FORMATS
 @media (orientation: landscape) {
-  @media (max-width: $iphoneX-width-landscape) {
+  @media (max-width: $iphone6-width-landscape) {
+    .landing {
+      .container {
+        button {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+  @media (min-width: $iphone6-width-landscape) and (max-width: $iphoneX-width-landscape) {
+    .landing {
+      .container {
+        button {
+          margin-top: 0px;
+        }
+      }
+    }
   }
 
   @media (min-width: 813px) and (max-width: $ipad-width-landscape) {

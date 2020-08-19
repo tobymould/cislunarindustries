@@ -12,12 +12,16 @@ body h2,
 body h3,
 body a,
 body li,
-body p {
+body p,
+body small {
   color: white;
 }
-body .container {
-  margin: 0 20px;
-  padding: 10px;
+body button {
+  background: white;
+  border: none;
+  padding: 20px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 header {
@@ -25,13 +29,15 @@ header {
   height: 20vh;
 }
 header .container {
+  padding: 20px 20px;
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
 }
 header .container img {
-  width: 150px;
+  width: 120px;
 }
 header .container nav {
   display: none;
@@ -46,7 +52,7 @@ header .container nav ul li {
 }
 
 .landing {
-  height: 100vh;
+  height: 102vh;
   background: url("./assests/nightsky.jpg") no-repeat center center/cover;
 }
 .landing .container {
@@ -57,7 +63,63 @@ header .container nav ul li {
   justify-content: center;
   text-align: center;
 }
+.landing .container h2 {
+  font-size: 2.5rem;
+}
+.landing .container h3 {
+  font-size: 1.75rem;
+  color: orange;
+}
+.landing .container button {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.landing .container small {
+  font-weight: bold;
+  width: 150px;
+}
 
+.earth {
+  background: #0b0f15;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+.earth h2 {
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+}
+.earth .dotted-line {
+  border-top: 7.5px dotted orange;
+  position: relative;
+  top: -5px;
+}
+.earth .dotted-line:nth-of-type(1) {
+  width: 20vw;
+}
+.earth .dotted-line:nth-of-type(2) {
+  width: 10vw;
+}
+.earth img {
+  height: 300px;
+  text-align: right;
+  position: absolute;
+  right: -150px;
+  top: -150px;
+}
+
+@media (orientation: landscape) and (max-width: 667px) {
+  .landing .container button {
+    margin-top: 0px;
+  }
+}
+@media (orientation: landscape) and (min-width: 667px) and (max-width: 812px) {
+  .landing .container button {
+    margin-top: 0px;
+  }
+}
 @media (orientation: landscape) and (min-width: 813px) and (max-width: 1024px) {
   header .container nav {
     display: block;
