@@ -170,7 +170,7 @@ footer {
   background: #353639;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 @media (orientation: landscape) and (max-width: 667px) {
